@@ -1,0 +1,73 @@
+/* =========================
+ESTILO DA HOME (INDEX)
+========================= */
+
+/* Apenas fundo da home (não mexe no layout global) */
+body {
+    background: linear-gradient(135deg, #7c94c0, #2a5298);
+    color: white;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    min-height: calc(100vh - 160px); /* espaço para header + footer */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+/* CARD CENTRAL */
+.container .card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* TÍTULO (escopado para não afetar o site todo) */
+.container h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+/* TEXTO */
+.container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* BOTÃO (corrigido - não afeta footer/header) */
+.container a {
+    text-decoration: none;
+    background: #00c6ff;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.container a:hover {
+    background: #00a6d6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .container .card {
+        padding: 25px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+}

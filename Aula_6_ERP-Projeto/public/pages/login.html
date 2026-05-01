@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ERP Industrial</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="../assets/css/layout.css">
+
+    <!-- CSS DA PÁGINA -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+        <div class="card">
+
+            <h2>Cadastro</h2>
+
+            <input type="text" id="cadEmail" placeholder="Digite seu email">
+            <input type="password" id="cadSenha" placeholder="Digite sua senha">
+            <button onclick="cadastrar()">Cadastrar</button>
+
+            <hr>
+
+            <h2>Login</h2>
+
+            <input type="text" id="loginEmail" placeholder="Digite seu email">
+            <input type="password" id="loginSenha" placeholder="Digite sua senha">
+            <button onclick="fazerLogin()">Entrar</button>
+
+            <p id="mensagem"></p>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- COMPONENTES -->
+    <script src="../assets/js/component.js"></script>
+
+    <!-- SCRIPT LOGIN -->
+    <script src="../assets/js/login.js"></script>
+
+</body>
+</html>
